@@ -1,19 +1,19 @@
 ---
-description: Implement highest priority small Linear ticket with worktree setup
+description: Implement highest priority small plane ticket with worktree setup
 model: sonnet
 ---
 
 ## PART I - IF A TICKET IS MENTIONED
 
-0c. use `linear` cli to fetch the selected item into thoughts with the ticket number - ./thoughts/shared/tickets/ENG-xxxx.md
+0c. use `plane` cli to fetch the selected item into thoughts with the ticket number - ./thoughts/shared/tickets/ENG-xxxx.md
 0d. read the ticket and all comments to understand the implementation plan and any concerns
 
 ## PART I - IF NO TICKET IS MENTIOND
 
-0.  read .claude/commands/linear.md
-0a. fetch the top 10 priority items from linear in status "ready for dev" using the MCP tools, noting all items in the `links` section
+0.  read .claude/commands/plane.md
+0a. fetch the top 10 priority items from plane in status "ready for dev" using the MCP tools, noting all items in the `links` section
 0b. select the highest priority SMALL or XS issue from the list (if no SMALL or XS issues exist, EXIT IMMEDIATELY and inform the user)
-0c. use `linear` cli to fetch the selected item into thoughts with the ticket number - ./thoughts/shared/tickets/ENG-xxxx.md
+0c. use `plane` cli to fetch the selected item into thoughts with the ticket number - ./thoughts/shared/tickets/ENG-xxxx.md
 0d. read the ticket and all comments to understand the implementation plan and any concerns
 
 ## PART II - NEXT STEPS
@@ -27,7 +27,7 @@ think deeply
 think deeply about the implementation
 
 2. set up worktree for implementation:
-2a. read `hack/create_worktree.sh` and create a new worktree with the Linear branch name: `./hack/create_worktree.sh ENG-XXXX BRANCH_NAME`
-2b. launch implementation session: `humanlayer-nightly launch --model sonnet --dangerously-skip-permissions --dangerously-skip-permissions-timeout 15m --title "implement ENG-XXXX" -w ~/wt/humanlayer/ENG-XXXX "/implement_plan and when you are done implementing and all tests pass, read ./claude/commands/commit.md and create a commit, then read ./claude/commands/describe_pr.md and create a PR, then add a comment to the Linear ticket with the PR link"`
+2a. read `hack/create_worktree.sh` and create a new worktree with the plane branch name: `./hack/create_worktree.sh ENG-XXXX BRANCH_NAME`
+2b. launch implementation session: `humanlayer-nightly launch --model sonnet --dangerously-skip-permissions --dangerously-skip-permissions-timeout 15m --title "implement ENG-XXXX" -w ~/wt/humanlayer/ENG-XXXX "/implement_plan and when you are done implementing and all tests pass, read ./claude/commands/commit.md and create a commit, then read ./claude/commands/describe_pr.md and create a PR, then add a comment to the plane ticket with the PR link"`
 
-think deeply, use TodoWrite to track your tasks. When fetching from linear, get the top 10 items by priority but only work on ONE item - specifically the highest priority SMALL or XS sized issue.
+think deeply, use TodoWrite to track your tasks. When fetching from plane, get the top 10 items by priority but only work on ONE item - specifically the highest priority SMALL or XS sized issue.

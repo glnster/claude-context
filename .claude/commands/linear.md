@@ -1,23 +1,23 @@
 ---
-description: Manage Linear tickets - create, update, comment, and follow workflow patterns
+description: Manage plane tickets - create, update, comment, and follow workflow patterns
 ---
 
-# Linear - Ticket Management
+# plane - Ticket Management
 
-You are tasked with managing Linear tickets, including creating tickets from thoughts documents, updating existing tickets, and following the team's specific workflow patterns.
+You are tasked with managing plane tickets, including creating tickets from thoughts documents, updating existing tickets, and following the team's specific workflow patterns.
 
 ## Initial Setup
 
-First, verify that Linear MCP tools are available by checking if any `mcp__linear__` tools exist. If not, respond:
+First, verify that plane MCP tools are available by checking if any `mcp__plane__` tools exist. If not, respond:
 ```
-I need access to Linear tools to help with ticket management. Please run the `/mcp` command to enable the Linear MCP server, then try again.
+I need access to plane tools to help with ticket management. Please run the `/mcp` command to enable the plane MCP server, then try again.
 ```
 
 If tools are available, respond based on the user's request:
 
 ### For general requests:
 ```
-I can help you with Linear tickets. What would you like to do?
+I can help you with plane tickets. What would you like to do?
 1. Create a new ticket from a thoughts document
 2. Add a comment to a ticket (I'll use our conversation context)
 3. Search for tickets
@@ -26,7 +26,7 @@ I can help you with Linear tickets. What would you like to do?
 
 ### For specific create requests:
 ```
-I'll help you create a Linear ticket from your thoughts document. Please provide:
+I'll help you create a plane ticket from your thoughts document. Please provide:
 1. The path to the thoughts document (or topic to search for)
 2. Any specific focus or angle for the ticket (optional)
 ```
@@ -101,17 +101,17 @@ Note: meta is mutually exclusive with hld/wui. Tickets can have both hld and wui
 3. **Check for related context (if mentioned in doc):**
    - If the document references specific code files, read relevant sections
    - If it mentions other thoughts documents, quickly check them
-   - Look for any existing Linear tickets mentioned
+   - Look for any existing plane tickets mentioned
 
-4. **Get Linear workspace context:**
-   - List teams: `mcp__linear__list_teams`
+4. **Get plane workspace context:**
+   - List teams: `mcp__plane__list_teams`
    - If multiple teams, ask user to select one
-   - List projects for selected team: `mcp__linear__list_projects`
+   - List projects for selected team: `mcp__plane__list_projects`
 
 5. **Draft the ticket summary:**
    Present a draft to the user:
    ```
-   ## Draft Linear Ticket
+   ## Draft plane Ticket
 
    **Title**: [Clear, action-oriented title]
 
@@ -146,9 +146,9 @@ Note: meta is mutually exclusive with hld/wui. Tickets can have both hld and wui
 
    Note: Ticket will be created in "Triage" status by default.
 
-7. **Create the Linear ticket:**
+7. **Create the plane ticket:**
    ```
-   mcp__linear__create_issue with:
+   mcp__plane__create_issue with:
    - title: [refined title]
    - description: [final description in markdown]
    - teamId: [selected team]
@@ -170,7 +170,7 @@ Note: meta is mutually exclusive with hld/wui. Tickets can have both hld and wui
      ```
      Add at the top of the document:
      ---
-     linear_ticket: [URL]
+     plane_ticket: [URL]
      created: [date]
      ---
      ```
@@ -207,7 +207,7 @@ When user wants to add a comment to a ticket:
 
 1. **Determine which ticket:**
    - Use context from the current conversation to identify the relevant ticket
-   - If uncertain, use `mcp__linear__get_issue` to show ticket details and confirm with user
+   - If uncertain, use `mcp__plane__get_issue` to show ticket details and confirm with user
    - Look for ticket references in recent work discussed
 
 2. **Format comments for clarity:**
@@ -241,12 +241,12 @@ When user wants to add a comment to a ticket:
 6. **For comments with links:**
    ```
    # First, update the issue with the link
-   mcp__linear__update_issue with:
+   mcp__plane__update_issue with:
    - id: [ticket ID]
    - links: [existing links + new link with proper title]
 
    # Then, create the comment mentioning the link
-   mcp__linear__create_comment with:
+   mcp__plane__create_comment with:
    - issueId: [ticket ID]
    - body: [formatted comment with key insights and file references]
    ```
@@ -254,12 +254,12 @@ When user wants to add a comment to a ticket:
 7. **For links only:**
    ```
    # Update the issue with the link
-   mcp__linear__update_issue with:
+   mcp__plane__update_issue with:
    - id: [ticket ID]
    - links: [existing links + new link with proper title]
 
    # Add a brief comment for posterity
-   mcp__linear__create_comment with:
+   mcp__plane__create_comment with:
    - issueId: [ticket ID]
    - body: "Added link: `path/to/document.md` ([View](url))"
    ```
@@ -276,7 +276,7 @@ When user wants to find tickets:
 
 2. **Execute search:**
    ```
-   mcp__linear__list_issues with:
+   mcp__plane__list_issues with:
    - query: [search text]
    - teamId: [if specified]
    - projectId: [if specified]
@@ -287,7 +287,7 @@ When user wants to find tickets:
 3. **Present results:**
    - Show ticket ID, title, status, assignee
    - Group by project if multiple projects
-   - Include direct links to Linear
+   - Include direct links to plane
 
 ### 4. Updating Ticket Status
 
@@ -310,7 +310,7 @@ When moving tickets through the workflow:
 
 3. **Update with context:**
    ```
-   mcp__linear__update_issue with:
+   mcp__plane__update_issue with:
    - id: [ticket ID]
    - stateId: [new status ID]
    ```
@@ -325,10 +325,10 @@ When moving tickets through the workflow:
 - Focus on the "what" and "why", include "how" only if well-defined
 - Always preserve links to source material using the `links` parameter
 - Don't create tickets from early-stage brainstorming unless requested
-- Use proper Linear markdown formatting
+- Use proper plane markdown formatting
 - Include code references as: `path/to/file.ext:linenum`
 - Ask for clarification rather than guessing project/status
-- Remember that Linear descriptions support full markdown including code blocks
+- Remember that plane descriptions support full markdown including code blocks
 - Always use the `links` parameter for external URLs (not just markdown links)
 - remember - you must get a "Problem to solve"!
 
@@ -381,7 +381,7 @@ Remember: The goal is to help a future reader (including yourself) quickly under
 - **Canceled**: `14a28d0d-c6aa-4d8e-9ff2-9801d4cc7de1` (type: canceled)
 
 
-## Linear User IDs
+## plane User IDs
 
 - allison: b157f9e4-8faf-4e7e-a598-dae6dec8a584
 - dex: 16765c85-2286-4c0f-ab49-0d4d79222ef5

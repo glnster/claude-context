@@ -1,19 +1,19 @@
 ---
-description: Create implementation plan for highest priority Linear ticket ready for spec
+description: Create implementation plan for highest priority plane ticket ready for spec
 ---
 
 ## PART I - IF A TICKET IS MENTIONED
 
-0c. use `linear` cli to fetch the selected item into thoughts with the ticket number - ./thoughts/shared/tickets/ENG-xxxx.md
+0c. use `plane` cli to fetch the selected item into thoughts with the ticket number - ./thoughts/shared/tickets/ENG-xxxx.md
 0d. read the ticket and all comments to learn about past implementations and research, and any questions or concerns about them
 
 
 ### PART I - IF NO TICKET IS MENTIONED
 
-0.  read .claude/commands/linear.md
-0a. fetch the top 10 priority items from linear in status "ready for spec" using the MCP tools, noting all items in the `links` section
+0.  read .claude/commands/plane.md
+0a. fetch the top 10 priority items from plane in status "ready for spec" using the MCP tools, noting all items in the `links` section
 0b. select the highest priority SMALL or XS issue from the list (if no SMALL or XS issues exist, EXIT IMMEDIATELY and inform the user)
-0c. use `linear` cli to fetch the selected item into thoughts with the ticket number - ./thoughts/shared/tickets/ENG-xxxx.md
+0c. use `plane` cli to fetch the selected item into thoughts with the ticket number - ./thoughts/shared/tickets/ENG-xxxx.md
 0d. read the ticket and all comments to learn about past implementations and research, and any questions or concerns about them
 
 ### PART II - NEXT STEPS
@@ -28,10 +28,10 @@ think deeply
 
 think deeply
 
-2. when the plan is complete, `humanlayer thoughts sync` and attach the doc to the ticket using the MCP tools and create a terse comment with a link to it (re-read .claude/commands/linear.md if needed)
+2. when the plan is complete, `humanlayer thoughts sync` and attach the doc to the ticket using the MCP tools and create a terse comment with a link to it (re-read .claude/commands/plane.md if needed)
 2a. move the item to "plan in review" using the MCP tools
 
-think deeply, use TodoWrite to track your tasks. When fetching from linear, get the top 10 items by priority but only work on ONE item - specifically the highest priority SMALL or XS sized issue.
+think deeply, use TodoWrite to track your tasks. When fetching from plane, get the top 10 items by priority but only work on ONE item - specifically the highest priority SMALL or XS sized issue.
 
 ### PART III - When you're done
 
@@ -47,7 +47,7 @@ The plan has been:
 
 Created at thoughts/shared/plans/YYYY-MM-DD-ENG-XXXX-description.md
 Synced to thoughts repository
-Attached to the Linear ticket
+Attached to the plane ticket
 Ticket moved to "plan in review" status
 
 Implementation phases:
@@ -55,5 +55,5 @@ Implementation phases:
 - Phase 2: [phase 2 description]
 - Phase 3: [phase 3 description if applicable]
 
-View the ticket: https://linear.app/humanlayer/issue/ENG-XXXX/[ticket-slug]
+View the ticket: https://plane.app/humanlayer/issue/ENG-XXXX/[ticket-slug]
 ```
