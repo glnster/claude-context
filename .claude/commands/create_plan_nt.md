@@ -1,6 +1,6 @@
 ---
 description: Create implementation plans with thorough research (no thoughts directory)
-model: opus
+model: sonnet
 ---
 
 # Implementation Plan
