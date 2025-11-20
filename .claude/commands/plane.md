@@ -10,7 +10,7 @@ You are tasked with managing plane tickets, including creating tickets from thou
 
 First, verify that plane MCP tools are available by checking if any `mcp__plane__` tools exist. If not, respond:
 ```
-I need access to plane tools to help with ticket management. Please run the `/mcp` command to enable the plane MCP server, then try again.
+I need access to plane tools to help with ticket management. Please run the `/mcp` command to enable the plane MCP server, then try again. See https://github.com/makeplane/plane-mcp-server
 ```
 
 If tools are available, respond based on the user's request:
