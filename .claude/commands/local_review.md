@@ -21,14 +21,14 @@ When invoked with a parameter like `gh_username:branchName`:
 
 3. **Set up the remote and worktree**:
    - Check if the remote already exists using `git remote -v`
-   - If not, add it: `git remote add USERNAME git@github.com:USERNAME/humanlayer`
+   - If not, add it: `git remote add USERNAME git@github.com:USERNAME`
    - Fetch from the remote: `git fetch USERNAME`
-   - Create worktree: `git worktree add -b BRANCHNAME ~/wt/humanlayer/SHORT_NAME USERNAME/BRANCHNAME`
+   - Create worktree: `git worktree add -b BRANCHNAME ~/wt/SHORT_NAME USERNAME/BRANCHNAME`
 
 4. **Configure the worktree**:
    - Copy Claude settings: `cp .claude/settings.local.json WORKTREE/.claude/`
    - Run setup: `make -C WORKTREE setup`
-   - Initialize thoughts: `cd WORKTREE && humanlayer thoughts init --directory humanlayer`
+   - Initialize thoughts: `WORKTREE/hack/init_thoughts.sh`
 
 ## Error Handling
 
@@ -44,5 +44,5 @@ When invoked with a parameter like `gh_username:branchName`:
 
 This will:
 - Add 'samdickson22' as a remote
-- Create worktree at `~/wt/humanlayer/eng-1696`
+- Create worktree at `~/wt/eng-1696`
 - Set up the environment
