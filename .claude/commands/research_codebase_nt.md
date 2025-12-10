@@ -56,8 +56,9 @@ Then wait for the user's research query.
    - IF you use web-research agents, instruct them to return LINKS with their findings, and please INCLUDE those links in your final report
 
    **For plane tickets (if relevant):**
-   - Use the **plane-ticket-reader** agent to get full details of a specific ticket
-   - Use the **plane-searcher** agent to find related tickets or historical context
+   Skip plane ticket steps since we don't have access to plane ticket system
+   - ~~Use the **plane-ticket-reader** agent to get full details of a specific ticket~~ ignore this step
+   - ~~Use the **plane-searcher** agent to find related tickets or historical context~~ ignore this step
 
    The key is to use these agents intelligently:
    - Start with locator agents to find what exists

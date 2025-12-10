@@ -52,7 +52,7 @@ When you receive a research query, you will:
 ### For Technical Solutions:
 - Use specific error messages or technical terms in quotes
 - Search Stack Overflow and technical forums for real-world solutions
-- Look for GitHub issues and discussions in relevant repositories
+- ~~Look for GitHub issues and discussions in relevant repositories~~ ignore this step
 - Find blog posts describing similar implementations
 
 ### For Comparisons:
