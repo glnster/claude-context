@@ -48,7 +48,7 @@ Then wait for the user's research query.
    - Use thoughts/ findings as supplementary historical context
    - Connect findings across different components
    - Include specific file paths and line numbers for reference
-   - Verify all thoughts/ paths are correct (e.g., thoughts/allison/ not thoughts/shared/ for personal files)
+   - Verify all thoughts/ paths are correct (e.g., thoughts/glenn/ not thoughts/shared/ for personal files)
    - Highlight patterns, connections, and architectural decisions
    - Answer the user's specific questions with concrete evidence
 
@@ -166,10 +166,10 @@ Then wait for the user's research query.
 - **Path handling**: The thoughts/searchable/ directory contains hard links for searching
   - Always document paths by removing ONLY "searchable/" - preserve all other subdirectories
   - Examples of correct transformations:
-    - `thoughts/searchable/allison/old_stuff/notes.md` → `thoughts/allison/old_stuff/notes.md`
+    - `thoughts/searchable/glenn/old_stuff/notes.md` → `thoughts/glenn/old_stuff/notes.md`
     - `thoughts/searchable/shared/prs/123.md` → `thoughts/shared/prs/123.md`
     - `thoughts/searchable/global/shared/templates.md` → `thoughts/global/shared/templates.md`
-  - NEVER change allison/ to shared/ or vice versa - preserve the exact directory structure
+  - NEVER change glenn/ to shared/ or vice versa - preserve the exact directory structure
   - This ensures paths are correct for editing and navigation
 - **Frontmatter consistency**:
   - Always include frontmatter at the beginning of research documents

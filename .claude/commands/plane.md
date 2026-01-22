@@ -57,7 +57,7 @@ The team follows a specific workflow to ensure alignment before code implementat
 ### URL Mapping for Thoughts Documents
 When referencing thoughts documents, always provide GitHub links using the `links` parameter:
 - `thoughts/shared/...` → `https://github.com/glnster/thoughts/blob/main/repos/glnster/shared/...`
-- `thoughts/allison/...` → `https://github.com/glnster/thoughts/blob/main/repos/glnster/allison/...`
+- `thoughts/glenn/...` → `https://github.com/glnster/thoughts/blob/main/repos/glnster/glenn/...`
 - `thoughts/global/...` → `https://github.com/glnster/thoughts/blob/main/global/...`
 
 ### Default Values
@@ -217,7 +217,7 @@ When user wants to add a comment to a ticket:
    - Include relevant file references with backticks and GitHub links
 
 3. **File reference formatting:**
-   - Wrap paths in backticks: `thoughts/allison/example.md`
+   - Wrap paths in backticks: `thoughts/glenn/example.md`
    - Add GitHub link after: `([View](url))`
    - Do this for both thoughts/ and code files mentioned
 
@@ -383,6 +383,4 @@ Remember: The goal is to help a future reader (including yourself) quickly under
 
 ## plane User IDs
 
-- allison: b157f9e4-8faf-4e7e-a598-dae6dec8a584
-- dex: 16765c85-2286-4c0f-ab49-0d4d79222ef5
-- sundeep: 0062104d-9351-44f5-b64c-d0b59acb516b
+- glenn: <some-uuid-here>
