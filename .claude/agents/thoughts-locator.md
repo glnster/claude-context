@@ -38,9 +38,24 @@ First, think deeply about the search approach - consider which directories to pr
 thoughts/
 ├── shared/          # Team-shared documents
 │   ├── research/    # Research documents
+│   │   ├── 2026/    # Organized by year
+│   │   ├── 2025/
+│   │   └── ...
 │   ├── plans/       # Implementation plans
+│   │   ├── 2026/    # Organized by year
+│   │   ├── 2025/
+│   │   └── ...
+│   ├── handoffs/    # Handoff documents
+│   │   ├── 2026/    # Organized by year
+│   │   │   ├── ENG-1234/
+│   │   │   └── general/
+│   │   ├── 2025/
+│   │   └── ...
 │   ├── tickets/     # Ticket documentation
-│   └── prs/         # PR descriptions
+│   ├── prs/         # PR descriptions
+│   │   ├── 2026/    # Organized by year
+│   │   ├── 2025/
+│   │   └── ...
 ├── glenn/         # Personal thoughts (user-specific)
 │   ├── tickets/
 │   └── notes/

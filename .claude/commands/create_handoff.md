@@ -10,7 +10,8 @@ You are tasked with writing a handoff document to hand off your work to another 
 ## Process
 ### 1. Filepath & Metadata
 Use the following information to understand how to create your document:
-    - create your file under `thoughts/shared/handoffs/ENG-XXXX/YYYY-MM-DD_HH-MM-SS_ENG-ZZZZ_description.md`, where:
+    - create your file under `thoughts/shared/handoffs/YYYY/ENG-XXXX/YYYY-MM-DD_HH-MM-SS_ENG-ZZZZ_description.md`, where:
+        - YYYY is the current year (as a folder)
         - YYYY-MM-DD is today's date
         - HH-MM-SS is the hours, minutes and seconds based on the current time, in 24-hour format (i.e. use `13:00` for `1:00 pm`)
         - ENG-XXXX is the ticket number (replace with `general` if no ticket)
@@ -18,8 +19,8 @@ Use the following information to understand how to create your document:
         - description is a brief kebab-case description
     - Run the `scripts/spec_metadata.sh` script to generate all relevant metadata
     - Examples:
-        - With ticket: `2025-01-08_13-55-22_ENG-2166_create-context-compaction.md`
-        - Without ticket: `2025-01-08_13-55-22_create-context-compaction.md`
+        - With ticket: `2025/ENG-2166/2025-01-08_13-55-22_ENG-2166_create-context-compaction.md`
+        - Without ticket: `2025/general/2025-01-08_13-55-22_create-context-compaction.md`
 
 ### 2. Handoff writing.
 using the above conventions, write your document. use the defined filepath, and the following YAML frontmatter pattern. Use the metadata gathered in step 1, Structure the document with YAML frontmatter followed by content:
