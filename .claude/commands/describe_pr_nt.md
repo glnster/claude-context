@@ -1,5 +1,7 @@
 ---
 description: Generate comprehensive PR descriptions following repository templates
+model: haiku
+fallback_model: sonnet
 ---
 
 # Generate PR Description

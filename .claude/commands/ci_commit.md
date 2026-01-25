@@ -1,5 +1,6 @@
 ---
 description: Create git commits for session changes with clear, atomic messages
+model: haiku
 ---
 
 # Commit Changes
@@ -31,4 +32,4 @@ You are tasked with creating git commits for the changes made during this sessio
 - Group related changes together
 - Keep commits focused and atomic when possible
 - The user trusts your judgment - they asked you to commit
-- **IMPORTANT**: - never stop and ask for feedback from the user. 
+- **IMPORTANT**: - never stop and ask for feedback from the user.

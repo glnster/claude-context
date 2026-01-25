@@ -1,10 +1,7 @@
-
 ---
 description: Create worktree and launch implementation session for a plan
+model: haiku
 ---
-
-2. set up worktree for implementation:
-2a. create a new worktree with the plane branch name: `./hack/create_worktree.sh ENG-XXXX BRANCH_NAME`
 
 1. determine required data:
 
@@ -18,6 +15,9 @@ command to run
 - Always use ONLY the relative path starting with `thoughts/shared/...` without any directory prefix
 - Example: `thoughts/shared/plans/fix-mcp-keepalive-proper.md` (not the full absolute path)
 - This works because thoughts are synced and accessible from the worktree
+
+2. set up worktree for implementation:
+2a. create a new worktree with the plane branch name: `./hack/create_worktree.sh ENG-XXXX BRANCH_NAME`
 
 3a. confirm with the user by sending a message to the Human
 

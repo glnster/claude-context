@@ -1,6 +1,7 @@
 ---
 description: Create detailed implementation plans with thorough research and iteration
-model: sonnet
+model: opus
+fallback_model: sonnet
 ---
 
 # Implementation Plan

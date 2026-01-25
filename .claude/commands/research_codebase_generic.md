@@ -1,6 +1,7 @@
 ---
 description: Research codebase comprehensively using parallel sub-agents
-model: sonnet
+model: opus
+fallback_model: sonnet
 ---
 
 # Research Codebase

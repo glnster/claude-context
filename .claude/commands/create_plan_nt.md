@@ -1,6 +1,7 @@
 ---
 description: Create implementation plans with thorough research (no thoughts directory)
-model: sonnet
+model: opus
+fallback_model: sonnet
 ---
 
 # Implementation Plan
